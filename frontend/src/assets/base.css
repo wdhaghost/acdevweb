@@ -1,0 +1,13 @@
+
+:root {
+}
+
+body {
+  min-height: 100vh;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    sans-serif;
+  font-size: 15px;
+}
