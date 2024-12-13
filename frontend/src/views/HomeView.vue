@@ -5,9 +5,9 @@ import Services from  '@/components/Services.vue'
 </script>
 
 <template>
-  <main class="h-lvh">
+  <div class="h-lvh bg-background text-foreground overflow-scroll">
     <Header/>
     <Hero/>
     <Services/>
-  </main>
+  </div>
 </template>
