@@ -11,10 +11,9 @@ export default {
         montserrat: ['Montserrat', 'sans-serif'], // Définit Montserrat comme une classe personnalisée
       },
       colors:{
-      'light-purple':'#B37FE8',
-      'dark-purple':'#521690',
-      'black':'#555555',
-      'soft-black':'#333333',
+      'purple':'var(--purple)',
+      'foreground':'var(--foreground)',
+      'background':'var(--background)',
       'blue':'#47A1FF'
     },
     },

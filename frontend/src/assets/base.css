@@ -11,3 +11,18 @@ body {
     sans-serif;
   font-size: 15px;
 }
+:root {
+  --background: #ffffff;
+  --background-rgb:0, 0, 0;
+  --foreground: #333333;
+  --purple:rgb(82, 22, 144);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #333333;
+    --background-rgb:51, 51, 51;
+    --foreground: #ffffff;
+    --purple:rgb(179, 127, 232);
+  }
+}
