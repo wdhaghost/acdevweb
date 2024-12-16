@@ -1,5 +1,5 @@
 <script setup>
-import ServiceCard from '@/components/service-card.vue'
+import ServiceCard from '@/components/ServiceCard.vue'
 import { ref } from 'vue';
 const services =ref([
     {
