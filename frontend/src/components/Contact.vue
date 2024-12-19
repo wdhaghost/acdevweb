@@ -10,7 +10,7 @@ const message = ref('')
 
 </script>
 <template>
-    <div class="flex flex-col gap-5 w-full px-36 pt-10 pb-20 content-center justify-center">
+    <form @submit.prevent="onSubmit" class="flex flex-col gap-5 w-full px-36 pt-10 pb-20 content-center justify-center">
         <p class="font-montserrat font-bold text-4xl text-center">Discutons de votre projet</p>
         <div class="text-center">
             <p class="font-robboto" >Nous proposons des solutions personnalisées pour aider les petits commerces à réussir leur transition digitale</p>
@@ -21,11 +21,13 @@ const message = ref('')
                 label="Nom"
                 type="text"
                 placeholder="Nom"
+                v-model:value="name"
                 />
                 <Input 
                 label="Prénom"
                 type="text"
                 placeholder="Prénom"
+                v-model:value="lastname"
                 />
             </div>
             <div class="w-full flex gap-2.5">
@@ -33,18 +35,21 @@ const message = ref('')
                 label="Ma Société"
                 type="text"
                 placeholder="Ma société"
+                v-model:value="societyName"
                 />
                 <Input 
                 label="Mail"
                 type="email"
                 placeholder="@"
+                v-model:value="mail"
                 />
             </div>
-                <TextArea
+            <TextArea
                 label="Votre besoin"
                 placeholder="Je vous écoute"
+                v-model:value="message"
                 />
-            <button class=" w-[200px] px-9 py-3 bg-blue rounded font-bold">Envoyez</button>
+            <button @click="" class=" w-[200px] px-9 py-3 bg-blue rounded font-bold">Envoyez</button>
         </div>
-    </div>
+    </form>
     </template>
