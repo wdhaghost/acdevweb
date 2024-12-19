@@ -10,12 +10,12 @@ const message = ref('')
 
 </script>
 <template>
-    <div class="flex flex-col gap-5 w-full px-36 pt-10 pb-20 content-center">
+    <div class="flex flex-col gap-5 w-full px-36 pt-10 pb-20 content-center justify-center">
         <p class="font-montserrat font-bold text-4xl text-center">Discutons de votre projet</p>
         <div class="text-center">
             <p class="font-robboto" >Nous proposons des solutions personnalisées pour aider les petits commerces à réussir leur transition digitale</p>
         </div>
-        <div class="bg-background rounded-sm shadow-md p-5 back-opacity-30">
+        <div class="bg-background flex flex-col items-center gap-2 rounded-sm shadow-md p-5 back-opacity-30">
             <div class="w-full flex gap-2.5">
                 <Input 
                 label="Nom"
@@ -44,6 +44,7 @@ const message = ref('')
                 label="Votre besoin"
                 placeholder="Je vous écoute"
                 />
+            <button class=" w-[200px] px-9 py-3 bg-blue rounded font-bold">Envoyez</button>
         </div>
     </div>
     </template>
