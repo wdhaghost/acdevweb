@@ -1,8 +1,13 @@
 <script setup>
 import { ref } from 'vue';
 import Input from './Input.vue';
-const name = ref()
-const lastname = ref()
+import TextArea from './TextArea.vue';
+const name = ref('')
+const lastname = ref('')
+const mail = ref('')
+const societyName = ref('')
+const message = ref('')
+
 </script>
 <template>
     <div class="flex flex-col gap-5 w-full px-36 pt-10 pb-20 content-center">
@@ -35,13 +40,10 @@ const lastname = ref()
                 placeholder="@"
                 />
             </div>
-            <div>
-                <Input
+                <TextArea
                 label="Votre besoin"
-                type="text"
                 placeholder="Je vous écoute"
                 />
-            </div>
         </div>
     </div>
     </template>
